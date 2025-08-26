@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header sederhana -->
+    <header class="header">
+        <h1 class="logo">Portfolio</h1>
+        <nav>
+            <a href="#home">Beranda</a>
+            <a href="#about">Tentang</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Section utama -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-left">
+                <img src="foto.png" alt="Foto Profil" class="profile-img">
+            </div>
+            <div class="hero-right">
+                <h1>Nama Lengkap Anda</h1>
+                <p class="title">Profesi / Spesialisasi</p>
+                <p class="description">Deskripsi singkat tentang diri Anda, keahlian, dan apa yang membuat Anda unik. Bisa berupa passion, pengalaman, atau visi yang ingin Anda capai dalam karir.</p>
+                <div class="buttons">
+                    <button id="downloadBtn" class="btn">Download CV</button>
+                    <button id="contactBtn" class="btn">Hubungi</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section tentang -->
+    <section id="about" class="about">
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah seorang profesional yang passionate dalam bidang yang saya tekuni. Dengan pengalaman dan dedikasi, saya berkomitmen untuk memberikan hasil terbaik dalam setiap proyek yang saya kerjakan.</p>
+        
+        <div class="skills">
+            <span class="skill">Keahlian 1</span>
+            <span class="skill">Keahlian 2</span>
+            <span class="skill">Keahlian 3</span>
+            <span class="skill">Keahlian 4</span>
+        </div>
+    </section>
+
+    <!-- Section portfolio -->
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="proyek1.png" alt="Proyek 1">
+                <h3>Judul Proyek 1</h3>
+                <p class="project-desc">Deskripsi singkat tentang proyek ini dan peran Anda di dalamnya.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="proyek2.png" alt="Proyek 2">
+                <h3>Judul Proyek 2</h3>
+                <p class="project-desc">Deskripsi singkat tentang proyek ini dan peran Anda di dalamnya.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="proyek3.png" alt="Proyek 3">
+                <h3>Judul Proyek 3</h3>
+                <p class="project-desc">Deskripsi singkat tentang proyek ini dan peran Anda di dalamnya.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section kontak -->
+    <section id="contact" class="contact">
+        <h2>Kontak</h2>
+        <div class="contact-info">
+            <p>Email: email@example.com</p>
+            <p>Telepon: +62 812-3456-7890</p>
+            <p>Lokasi: Kota, Provinsi</p>
+        </div>
+        <form class="contact-form">
+            <input type="text" placeholder="Nama Lengkap" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Pesan" required></textarea>
+            <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Portfolio Template</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

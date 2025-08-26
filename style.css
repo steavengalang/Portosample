@@ -1,0 +1,327 @@
+/* Reset dan pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #4F46E5;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 2rem;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #4F46E5;
+}
+
+/* Hero section - Layout horizontal */
+.hero {
+    background: linear-gradient(135deg, #4F46E5, #8B5CF6);
+    color: white;
+    padding: 120px 20px 80px;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.hero-left {
+    flex-shrink: 0;
+}
+
+.hero-right {
+    flex: 1;
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 6px solid white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.hero .title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+    font-weight: 600;
+}
+
+.hero .description {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+    line-height: 1.7;
+    max-width: 500px;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Button */
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hero .btn {
+    background: white;
+    color: #4F46E5;
+    font-weight: 600;
+}
+
+.hero .btn:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+}
+
+/* Sections */
+section {
+    padding: 80px 20px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* About section */
+.about {
+    background: white;
+    text-align: center;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.skills {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background: #f8f9fa;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+    border: 2px solid #4F46E5;
+    color: #4F46E5;
+}
+
+/* Portfolio section */
+.portfolio {
+    background: #f8f9fa;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-item h3 {
+    padding: 1rem 1rem 0.5rem;
+    text-align: center;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.portfolio-item .project-desc {
+    padding: 0 1rem 1rem;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Contact section */
+.contact {
+    background: white;
+    text-align: center;
+}
+
+.contact-info {
+    margin-bottom: 2rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #4F46E5;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.contact-form .btn {
+    background: #4F46E5;
+    color: white;
+    font-weight: 600;
+    align-self: center;
+}
+
+.contact-form .btn:hover {
+    background: #4338ca;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem;
+    }
+    
+    nav a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Hero responsive - stack vertically on mobile */
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero .title {
+        font-size: 1.2rem;
+    }
+    
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 250px;
+    }
+    
+    .skills {
+        justify-content: center;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+  
